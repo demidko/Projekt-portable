@@ -1,10 +1,10 @@
 # syntax = docker/dockerfile:experimental
 FROM gradle:jdk15 as builder
-WORKDIR /root
+WORKDIR /application
 COPY src ./src
 COPY build.gradle.kts ./build.gradle.kts
-RUN gradle clean test shadowJar
+RUN --mount=type=cache,target=./.gradle gradle clean test runtime
 
-FROM openjdk:15-alpine as backend
+FROM debian:latest as backend
 WORKDIR /root
-COPY --from=builder /root/*.jar ./application
+COPY --from=builder /application/build/image ./

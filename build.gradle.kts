@@ -6,6 +6,7 @@ repositories {
 plugins {
   kotlin("jvm") version "1.4.30"
   id("com.github.johnrengelman.shadow") version "6.1.0"
+  id("org.beryx.runtime") version "1.12.1"
 }
 
 dependencies {
@@ -16,24 +17,18 @@ dependencies {
   testImplementation("com.nhaarman.mockitokotlin2:mockito-kotlin:2.2.0")
 }
 
-tasks.test {
-  useTestNG()
+application {
+  @Suppress("DEPRECATION") // for compatibility with shadowJar
+  mainClassName = "AppKt"
 }
 
-tasks.compileKotlin {
-  kotlinOptions.jvmTarget = "15"
-}
-
-tasks.jar {
-  manifest {
-    attributes(
-      "Main-Class" to "AppKt"
-    )
+tasks {
+  test {
+    useTestNG()
   }
-}
-
-tasks.shadowJar {
-  archiveClassifier.set("")
-  archiveVersion.set("")
-  destinationDirectory.set(rootDir)
+  compileKotlin {
+    kotlinOptions {
+      jvmTarget = "15"
+    }
+  }
 }

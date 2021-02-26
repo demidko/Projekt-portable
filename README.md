@@ -1,6 +1,6 @@
-## Projekt
+## Projekt-native
 
-Kotlin template project without extra gradle-wrapper files. For brevity, double-space formatting is
+Kotlin native template project without extra gradle-wrapper files. For brevity, double-space formatting is
 used. [`Clikt`](https://ajalt.github.io/clikt/whyclikt/) is included for parsing command line
 arguments. [`Ktor`](https://ktor.io/) is included to mock Digital Ocean healthy checks.
 
@@ -18,6 +18,6 @@ arguments. [`Ktor`](https://ktor.io/) is included to mock Digital Ocean healthy 
 
 ### Build with [`Gradle`](https://gradle.org/)
 
-* Execute command `gradle clean test shadowJar` to build self-executable jar.
+* Execute command `gradle clean test runtime` to build self-executable app.
 
-Then you can start the application with the `java -jar *.jar` command.
+Then you can start the application with the `./build/image/bin/*` command.
