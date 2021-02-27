@@ -12,6 +12,6 @@ class AppKtTest {
     val injectedOutput = ByteArrayOutputStream()
     setOut(PrintStream(injectedOutput))
     main(arrayOf())
-    assertThat(injectedOutput.toByteArray().decodeToString(), equalTo("Application successfully started\n"))
+    assertThat(injectedOutput.toByteArray().decodeToString(), equalTo("localhost:80 -> HTTP 200 OK\n"))
   }
 }
