@@ -3,6 +3,6 @@ version: "3.9"
 services:
   backend:
     build: .
-    command: ./root/application $BACKEND_OPTIONS
+    command: bin/app $BACKEND_OPTIONS
     ports:
       - "80:80"
