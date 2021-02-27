@@ -7,7 +7,7 @@ checks.
 
 ### Usage
 
-* Just click [`button`](https://github.com/demidko/Projekt-portable/generate) to use this template.
+* Just click [`this button`](https://github.com/demidko/Projekt-portable/generate) to use template.
 
 ### Deploy to cloud with [`Digital Ocean`](https://cloud.digitalocean.com/)
 
