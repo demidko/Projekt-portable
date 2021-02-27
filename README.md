@@ -1,6 +1,6 @@
-## Projekt-native
+## Projekt-portable
 
-Kotlin native template project without extra gradle-wrapper files. For brevity, double-space
+Kotlin template project with portable jvm. For brevity, double-space
 formatting is used. [`Clikt`](https://ajalt.github.io/clikt/whyclikt/) is included for parsing
 command line arguments. [`Ktor`](https://ktor.io/) is included to mock Digital Ocean healthy checks.
 
