@@ -1,8 +1,9 @@
 ## Projekt-portable
 
-Kotlin template project with portable jvm. For brevity, double-space
-formatting is used. [`Clikt`](https://ajalt.github.io/clikt/whyclikt/) is included for parsing
-command line arguments. [`Ktor`](https://ktor.io/) is included to mock Digital Ocean healthy checks.
+Kotlin Microservice Project Template produces portable application with bundled jvm. For brevity,
+double-space formatting is used. [`Clikt`](https://ajalt.github.io/clikt/whyclikt/) is included for
+parsing command line arguments. [`Ktor`](https://ktor.io/) is included to mock Digital Ocean healthy
+checks.
 
 ### Usage
 
