@@ -11,7 +11,7 @@ checks.
 
 ### Deploy to cloud with [`Digital Ocean`](https://cloud.digitalocean.com/)
 
-*. Select repository [`here`](https://cloud.digitalocean.com/apps) to start microservice.
+* Select repository [`here`](https://cloud.digitalocean.com/apps) to start microservice.
 
 ### Run with [`Docker`](https://www.docker.com/products/docker-desktop)
 
